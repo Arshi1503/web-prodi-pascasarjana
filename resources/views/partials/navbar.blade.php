@@ -49,16 +49,16 @@
                       <ul class="navbar-nav alt-font tw-gap-6">
                           <li class="nav-item"><a href="/" class="nav-link">Beranda</a></li>
                           <li class="nav-item dropdown simple-dropdown">
-                              <a href="/tentang-administrasi-bisnis" class="nav-link">Tentang Kami</a>
+                              <a href="/tentang" class="nav-link">Tentang Kami</a>
                               <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                  <li><a href="/tentang-administrasi-bisnis">Tentang Administrasi Bisnis</a></li>
-                                  <li><a href="/tentang-visi-misi-tujuan">Visi, Misi, dan Tujuan</a></li>
-                                  <li><a href="/tentang-struktur-organisasi">Struktur Organisasi</a></li>
-                                  <li><a href="/tentang-fasilitas">Fasilitas</a></li>
-                                  <li><a href="/tentang-dosen">Dosen</a></li>
-                                  <li><a href="/tentang-akreditasi">Akreditas</a></li>
-                                  <li><a href="/tentang-karir">Karir</a></li>
+                                  <li><a href="/tentang">Tentang Administrasi Bisnis</a></li>
+                                  <li><a href="/visi-misi-tujuan">Visi, Misi, dan Tujuan</a></li>
+                                  <li><a href="/struktur-organisasi">Struktur Organisasi</a></li>
+                                  <li><a href="/fasilitas">Fasilitas</a></li>
+                                  <li><a href="/dosen">Dosen</a></li>
+                                  <li><a href="/akreditasi">Akreditas</a></li>
+                                  <li><a href="/karir">Karir</a></li>
                               </ul>
                           </li>
                           <li class="nav-item dropdown simple-dropdown">

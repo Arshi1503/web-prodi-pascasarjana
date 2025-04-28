@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* Start Card Components */
+    .tw-card{
+        @apply tw-w-full tw-max-w-7xl tw-mx-auto tw-p-6 tw-bg-gray-100 tw-shadow-lg tw-rounded-lg;
+    }
+    .tw-card-title{
+        @apply tw-mb-4 tw-text-center tw-text-black
+    }
+    .tw-card-subtitle{
+        @apply tw-mb-4 tw-text-center tw-text-gray-600
+    }
+    /* End Card Components */
+    /* Start Table Components */
+    .tw-table{
+        @apply tw-w-full tw-text-lg tw-text-left tw-text-gray-900
+    }
+    .tw-table-head{
+        @apply tw-text-lg tw-text-[#BC8947] tw-uppercase tw-bg-slate-200
+    }
+    .tw-table-row{
+        @apply tw-bg-white tw-border-b tw-border-gray-400 last:tw-border-0 tw-text-justify
+    }
+    /* End Table Components */
+    /* Start Tab Navigation Components */
+    .tw-tab-nav{
+        @apply tw-flex tw-border-b-2
+    }
+
+    .tw-tab-nav-active{
+        @apply tw-px-4 tw-py-2 tw-text-[#BC8947] hover:tw-text-[#c9a06b] tw-font-semibold tw-border-b-2 tw-border-[#BC8947]
+    }
+
+    .tw-tab-nav-deactive{
+        @apply tw-px-4 tw-py-2 tw-text-gray-600 hover:tw-text-[#c9a06b]
+    }
+    /* End Tab Navigation Components */
+    /* Start Section Component  */
+    .tw-section-dark{
+        @apply tw-border tw-border-x tw-border-[#2E2E2E] tw-bg-[#2E2E2E]
+    }
+    /* End Section Component */
+}

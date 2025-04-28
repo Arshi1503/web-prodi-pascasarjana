@@ -45,7 +45,7 @@
                             @if ($tentang && $tentang->deskripsi)   
                             <div class="col-lg-12 mb-25px last-paragraph-no-margin">
                                 <p class="w-85 md-w-95 sm-w-100">{!! Str::before($tentang->deskripsi, '</p>') . '</p>' !!}</p>
-                                <button type="button" class="tw-text-white tw-bg-[#BC8947] tw-my-3 hover:tw-bg-[#c9a06b] focus:tw-outline-none focus:tw-ring-4 focus:tw-ring-[#c9a06b] tw-font-medium tw-rounded-full tw-text-sm tw-px-5 tw-py-2.5 tw-text-center tw-me-2 tw-mb-2"><a class="tw-text-white" href="/tentang-administrasi-bisnis">Lihat Selengkapnya</a></button>
+                                <button type="button" class="tw-text-white tw-bg-[#BC8947] tw-my-3 hover:tw-bg-[#c9a06b] focus:tw-outline-none focus:tw-ring-4 focus:tw-ring-[#c9a06b] tw-font-medium tw-rounded-full tw-text-sm tw-px-5 tw-py-2.5 tw-text-center tw-me-2 tw-mb-2"><a class="tw-text-white" href="/tentang">Lihat Selengkapnya</a></button>
                             </div>
                             @endif
                         </div>
