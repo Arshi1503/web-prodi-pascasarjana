@@ -62,20 +62,20 @@
                               </ul>
                           </li>
                           <li class="nav-item dropdown simple-dropdown">
-                              <a href="/akademi-kurikulum" class="nav-link">Akademik</a>
+                              <a href="/kurikulum" class="nav-link">Akademik</a>
                               <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                  <li><a href="/akademi-kurikulum">Kurikulum</a></li>
-                                  <li><a href="/akademi-profil">Profil Lulusan</a></li>
+                                  <li><a href="/kurikulum">Kurikulum</a></li>
+                                  <li><a href="/profil-lulusan">Profil Lulusan</a></li>
                               </ul>
                           </li>
                           <li class="nav-item dropdown simple-dropdown">
-                              <a href="/publikasi-artikel" class="nav-link">Publikasi</a>
+                              <a href="/artikel" class="nav-link">Publikasi</a>
                               <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink_1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                  <li><a href="/publikasi-artikel">Artikel</a></li>
-                                  <li><a href="/publikasi-berita">Berita</a></li>
-                                  <li><a href="/publikasi-kegiatan">Kegiatan</a></li>
+                                  <li><a href="/artikel">Artikel</a></li>
+                                  <li><a href="/berita">Berita</a></li>
+                                  <li><a href="/kegiatan">Kegiatan</a></li>
                               </ul>
                           </li>
                           <li class="nav-item dropdown simple-dropdown">
