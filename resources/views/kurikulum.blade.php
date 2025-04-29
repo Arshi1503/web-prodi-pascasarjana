@@ -140,10 +140,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $total_sks = 0;
+                                        @endphp
                                         @foreach ($semester3 as $item )
                                         <tr class="tw-table-row">
                                             @if ($item->kode_mata_kuliah)
-                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-min-w-[100px]tw-text-center">{!! $item->kode_mata_kuliah !!}</td>    
+                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-min-w-[100px] tw-text-center">{!! $item->kode_mata_kuliah !!}</td>    
                                             @endif
                                             @if ($item->nama_mata_kuliah)
                                             <td class="tw-px-6 tw-py-4 tw-text-center">{!! $item->nama_mata_kuliah !!}</td>
@@ -171,6 +174,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $total_sks = 0;
+                                        @endphp
                                         @foreach ($semester4 as $item )
                                         <tr class="tw-table-row">
                                             @if ($item->kode_mata_kuliah)
@@ -202,6 +208,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $total_sks = 0;
+                                        @endphp
                                         @foreach ($semester5 as $item )
                                         <tr class="tw-table-row">
                                             @if ($item->kode_mata_kuliah)
@@ -233,6 +242,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $total_sks = 0;
+                                        @endphp
                                         @foreach ($semester6 as $item )
                                         <tr class="tw-table-row">
                                             @if ($item->kode_mata_kuliah)
@@ -264,6 +276,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $total_sks = 0;
+                                        @endphp
                                         @foreach ($semester7 as $item )
                                         <tr class="tw-table-row">
                                             @if ($item->kode_mata_kuliah)
@@ -295,6 +310,9 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $total_sks = 0;
+                                        @endphp
                                         @foreach ($semester8 as $item )
                                         <tr class="tw-table-row">
                                             @if ($item->kode_mata_kuliah)
@@ -323,7 +341,7 @@
                 <h3 class="tw-card-title">Standar Kompentensi Lulusan</h3>
 
                 @if ($standarKompetensiLulusan ->first() && $standarKompetensiLulusan->first()->teks)
-                <p class="tw-card-subtitle">{!! $standarKompentensiLulusan->first()->teks !!}</p>
+                <p class="tw-card-subtitle">{!! $standarKompetensiLulusan->first()->teks !!}</p>
                 @endif
                 {{-- Start Table--}}
                 <div class="tw-p-4">
@@ -331,7 +349,7 @@
                         <table class="tw-table">
                           <thead class="tw-table-head">
                             <tr>
-                              <th scope="col" class="tw-pl-3 tw-py-3">No</th>
+                              <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                               <th scope="col" class="tw-pr-6 tw-py-3 tw-text-center">Deskripsi</th>
                             </tr>
                           </thead>
@@ -342,7 +360,7 @@
                                 @endphp
                             @foreach ($standarKompetensiLulusan as $item )
                             <tr class="tw-table-row">
-                                <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter}} . {{ $subCounter++ }}</td>
+                                <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter}}.{{ $subCounter++ }}</td>
                                 @if ($item->deskripsi)
                                 <td class="tw-px-3 tw-py-4 tw-text-justify">
                                 {!! $item->deskripsi !!}</td>
@@ -368,7 +386,7 @@
                             <table class="tw-table">
                               <thead class="tw-table-head">
                                 <tr>
-                                  <th scope="col" class="tw-pl-3 tw-py-3" style="width: 4%">No</th>
+                                  <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                                   <th scope="col" class="tw-pr-6 tw-py-3 tw-text-center">Deskripsi</th>
                                 </tr>
                               </thead>
@@ -379,16 +397,11 @@
                                 @endphp
                                 @foreach ($capaianPembelajaran as $item )
                                 <tr class="tw-table-row">
-                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter}} . {{ $subcounter++ }}</td>
+                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter}}.{{ $subcounter++ }}</td>
                                     <td class="tw-px-3 tw-py-4 tw-text-justify">	
                                     {!! $item->deskripsi !!}</td>
                                 </tr>
                                 @endforeach
-                                <tr class="tw-table-row">
-                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">1</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-justify">	
-                                    Lorem ipsum</td>
-                                </tr>
                               </tbody>
                             </table>
                           </div>
@@ -409,7 +422,7 @@
                                 <table class="tw-table">
                                     <thead class="tw-table-head">
                                         <tr>
-                                            <th scope="col" class="tw-pl-3 tw-py-3" style="width: 5%">No</th>
+                                            <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                                             <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center">Indikator</th>
                                         </tr>
                                     </thead>
@@ -420,7 +433,7 @@
                                         @endphp
                                         @foreach ($sikapCPL as $item )
                                         <tr class="tw-table-row">
-                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter}} . {{ $subCounter++ }}</td>
+                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter}}.{{ $subCounter++ }}</td>
                                             @if ($item->indikator)
                                             <td class="tw-px-3 tw-py-4 tw-text-justify">
                                                 {!! $item->indikator !!}
@@ -438,7 +451,7 @@
                                 <table class="tw-table">
                                     <thead class="tw-table-head">
                                         <tr>
-                                            <th scope="col" class="tw-pl-3 tw-py-3"  style="width: 5%">No</th>
+                                            <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center"  style="width: 8%">No</th>
                                             <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center">Indikator</th>
                                         </tr>
                                     </thead>
@@ -449,7 +462,7 @@
                                         @endphp
                                         @foreach ($pengetahuanCPL as $item )
                                         <tr class="tw-table-row">
-                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter}} . {{ $subCounter++ }}</td>
+                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter}}.{{ $subCounter++ }}</td>
                                             @if ($item->indikator)
                                             <td class="tw-px-3 tw-py-4 tw-text-justify">
                                                 {!! $item->indikator !!}
@@ -468,7 +481,7 @@
                                 <table class="tw-table">
                                     <thead class="tw-table-head">
                                         <tr>
-                                            <th scope="col" class="tw-pl-3 tw-py-3" style="width: 5%">No</th>
+                                            <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                                             <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center">Indikator</th>
                                         </tr>
                                     </thead>
@@ -479,7 +492,7 @@
                                         @endphp
                                         @foreach ($keterampilanUmumCPL as $item )
                                         <tr class="tw-table-row">
-                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter}} . {{ $subCounter++ }}</td>
+                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter}}.{{ $subCounter++ }}</td>
                                             @if ($item->indikator)
                                             <td class="tw-px-3 tw-py-4 tw-text-justify">
                                                 {!! $item->indikator !!}
@@ -498,7 +511,7 @@
                                 <table class="tw-table">
                                     <thead class="tw-table-head">
                                         <tr>
-                                            <th scope="col" class="tw-pl-3 tw-py-3" style="width: 5%">No</th>
+                                            <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                                             <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center">Indikator</th>
                                         </tr>
                                     </thead>
@@ -509,7 +522,7 @@
                                         @endphp
                                         @foreach ($keterampilanKhususCPL as $item )
                                         <tr class="tw-table-row">
-                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter}} . {{ $subCounter++ }}</td>
+                                            <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter}}.{{ $subCounter++ }}</td>
                                             @if ($item->indikator)
                                             <td class="tw-px-3 tw-py-4 tw-text-justify">
                                                 {!! $item->indikator !!}
@@ -530,7 +543,7 @@
                         <table class="tw-table">
                             <thead class="tw-table-head">
                                 <tr>
-                                    <th scope="col" class="tw-pl-3 tw-py-3" style="width: 5%">No</th>
+                                    <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                                     <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center">Deskripsi</th>
                                 </tr>
                             </thead>
@@ -540,7 +553,7 @@
                                 @endphp
                                 @foreach ($kompetensi as $item )
                                 <tr class="tw-table-row">
-                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter++ }}</td>
+                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter++ }}</td>
                                     @if ($item->deskripsi)
                                     <td class="tw-px-3 tw-py-4 tw-text-justify">
                                     {!! $item->deskripsi !!}
@@ -560,7 +573,7 @@
                         <table class="tw-table">
                             <thead class="tw-table-head">
                                 <tr>
-                                    <th scope="col" class="tw-pl-3 tw-py-3" style="width: 5%">No</th>
+                                    <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center" style="width: 8%">No</th>
                                     <th scope="col" class="tw-pl-3 tw-py-3 tw-text-center">Deskripsi</th>
                                 </tr>
                             </thead>
@@ -568,9 +581,9 @@
                                 @php
                                     $counter = 1;
                                 @endphp
-                                @foreach ($sasaranKualitas as $item )
+                              @foreach ($sasaranKualitas as $item)
                                 <tr class="tw-table-row">
-                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter++ }}</td>
+                                    <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900 tw-text-center">{{ $counter++ }}</td>
                                     @if ($item->deskripsi)
                                     <td class="tw-px-3 tw-py-4 tw-text-justify">
                                     {!! $item->deskripsi !!}

@@ -19,7 +19,7 @@
                     <div class="col-12 text-center position-relative page-title-extra-large">
                         <div class="d-flex flex-column small-screen">
                             <div class="mt-auto" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 400, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
-                                <h1 class="text-white alt-font mb-0 text-shadow-extra-large fw-500 ls-minus-1px">Administarsi Bisnis</h1>
+                                <h1 class="text-white alt-font mb-0 text-shadow-extra-large fw-500 ls-minus-1px">Administrasi Bisnis</h1>
                             </div>
                             <!-- start breadcrumb -->
                             <div class="mt-auto justify-content-center breadcrumb breadcrumb-style-01 alt-font text-white">
@@ -40,7 +40,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-5 col-lg-6 md-mb-9 sm-mb-50px" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                         <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px mb-15px">Tentang</span>
-                        <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px mb-35px shadow-none" data-shadow-animation="true" data-animation-delay="700">Administarsi <span class="text-highlight">Bisnis<span class="bg-base-color h-10px sm-h-8px bottom-20px md-bottom-17px opacity-5 separator-animation"></span></span></h1>
+                        <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px mb-35px shadow-none" data-shadow-animation="true" data-animation-delay="700">Administrasi <span class="text-highlight">Bisnis<span class="bg-base-color h-10px sm-h-8px bottom-20px md-bottom-17px opacity-5 separator-animation"></span></span></h1>
                         <div class="row">
                             @if ($tentang && $tentang->deskripsi)   
                             <div class="col-lg-12 mb-25px last-paragraph-no-margin">
@@ -150,7 +150,7 @@
                                 @if ($pimpinanStaff && $pimpinanStaff->kata_sambutan)
                                 <p class="w-85 md-w-95 sm-w-100">{!! Str::before($pimpinanStaff->kata_sambutan, '</p>') . '</p>' !!} </p>
                                 @endif
-                                <button type="button" class="tw-text-white tw-bg-[#BC8947] tw-my-3 hover:tw-bg-[#c9a06b] focus:tw-outline-none focus:tw-ring-4 focus:tw-ring-[#c9a06b] tw-font-medium tw-rounded-full tw-text-sm tw-px-5 tw-py-2.5 tw-text-center tw-me-2 tw-mb-2"><a class="tw-text-white" href="/detail-kata-sambutan">Lihat Selengkapnya</a></button>
+                                <button type="button" class="tw-text-white tw-bg-[#BC8947] tw-my-3 hover:tw-bg-[#c9a06b] focus:tw-outline-none focus:tw-ring-4 focus:tw-ring-[#c9a06b] tw-font-medium tw-rounded-full tw-text-sm tw-px-5 tw-py-2.5 tw-text-center tw-me-2 tw-mb-2"><a class="tw-text-white" href="{{ route('pimpinanStaff.showDetail', $pimpinanStaff->id) }}">Lihat Selengkapnya</a></button>
                             </div>
                         </div>
                     </div>
