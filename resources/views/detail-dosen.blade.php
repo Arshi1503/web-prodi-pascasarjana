@@ -5,8 +5,6 @@
 
 <!-- start page title -->
         <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5">
-            <img src="{{asset('images/gambar/iwupaster.jpg')}}" alt=""
-            class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-z-0">
             <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -154,4 +152,6 @@
                 <p>Data statistik kutipan tidak tersedia.</p>
             @endisset
         </div>
+        <!-- end section -->
+    </div>
 @endsection

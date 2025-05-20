@@ -30,6 +30,7 @@
     @stack('styles')
 </head>
 <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
+    
 
     @include('partials.navbar') {{-- kalau ada navbar --}}
 

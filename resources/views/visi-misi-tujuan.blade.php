@@ -5,8 +5,6 @@
 
 <!-- start page title -->
         <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5">
-          <img src="{{asset('images/gambar/iwupaster.jpg')}}" alt=""
-          class="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-z-0">
             <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -78,14 +76,20 @@
                             </tr>
                           </thead>
                           <tbody>
-                            @php $counter = 1; @endphp
                             @foreach ($visiMisiTujuan as $item)
-                            <tr class="tw-table-row">
-                              <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter++ }}</td>
-                              @if ($item->misi)    
-                              <td class="tw-px-6 tw-py-4">{!! $item->misi !!}</td>
-                              @endif
-                            </tr>
+                            @if (is_array($item->misi))
+                              @foreach ($item->misi as $index => $m)
+                                <tr class="tw-table-row">
+                                  <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{$index + 1}}</td>   
+                                  <td class="tw-px-6 tw-py-4">{!! $m['text']!!}</td>    
+                                </tr> 
+                              @endforeach
+                            @else
+                              <tr class="tw-table-row">
+                                <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">1</td>   
+                                <td class="tw-px-6 tw-py-4">{!! $item->misi !!}</td>    
+                              </tr>
+                            @endif
                             @endforeach
                           </tbody>
                         </table>
@@ -102,12 +106,20 @@
                             </tr>
                           </thead>
                           <tbody>
-                            @php $counter = 1; @endphp
-                            @foreach ($visiMisiTujuan as $item )
-                            <tr class="tw-bg-white tw-border-b tw-border-gray-400 tw-text-justify">
-                              <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter++ }}</td>
-                              <td class="tw-px-6 tw-py-4">{!! $item->tujuan !!}</td>
-                            </tr>
+                            @foreach ($visiMisiTujuan as $item)
+                            @if (is_array($item->tujuan))
+                              @foreach ($item->tujuan as $index => $m)
+                                <tr class="tw-table-row">
+                                  <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{$index + 1}}</td>   
+                                  <td class="tw-px-6 tw-py-4">{!! $m['text']!!}</td>    
+                                </tr> 
+                              @endforeach
+                            @else
+                              <tr class="tw-table-row">
+                                <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">1</td>   
+                                <td class="tw-px-6 tw-py-4">{!! $item->tujuan !!}</td>    
+                              </tr>
+                            @endif
                             @endforeach
                           </tbody>
                         </table>
