@@ -32,7 +32,7 @@
                 <div>
                     <h3 class="tw-card-title">Profil Lulusan Administrasi Bisnis</h3>
                     @if ($profilLulusan->first() && $profilLulusan->first()->teks)
-                    <p class="tw-card-subtitle">{!! $profilLulusan->first()->teks !!}</p>
+                    <span class="tw-card-subtitle">{!! $profilLulusan->first()->teks !!}</span>
                     @endif
                     <div class="tw-overflow-x-auto">
                         <div class="tw-overflow-x-auto">
@@ -70,8 +70,8 @@
             {{-- End Card --}}
             {{-- Slider --}}
             <div class="row justify-content-center mb-3">
-                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h3 class="text-dark-gray ls-minus-1px">Testimoni Alumni</h3>
+                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center tw-mx-auto" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <h3 class="tw-text-softgold ls-minus-1px tw-mx-auto">Testimoni Alumni</h3>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center mb-6 sm-mb-8 tw-mt-12" data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
@@ -90,10 +90,10 @@
                                         @endif
                                         <div class="col-lg-5 last-paragraph-no-margin md:tw-text-start tw-text-center">
                                             @if($item->teks)
-                                            <span class="mb-5px tw-block ls-1px fs-18 fw-500 text-dark-gray">{!! $item->teks !!}</span>
+                                            <div class="mb-5px tw-block ls-1px fs-18 fw-500 !tw-text-gray-400">{!! $item->teks !!}</div>
                                             @endif
                                             @if ($item->nama)
-                                            <span class="fs-15 text-uppercase fw-800 text-base-color ls-1px">{!! $item->nama !!}</span>    
+                                            <span class="fs-15 text-uppercase fw-800 tw-text-softgold ls-1px">{!! $item->nama !!}</span>    
                                             @endif
                                         </div>
                                     </div>
@@ -104,9 +104,9 @@
                                 <!-- end testimonial item -->
                             </div>
                             <!-- start slider navigation -->
-                            <div class="swiper-button-previous-nav swiper-button-prev md-left-0px"><i class="feather icon-feather-arrow-left icon-extra-medium text-dark-gray"></i></div>
-                            <div class="swiper-button-next-nav swiper-button-next md-right-0px"><i class="feather icon-feather-arrow-right icon-extra-medium text-dark-gray"></i></div>
-                            <!-- end slider pagination -->
+                            {{-- <div class="swiper-button-previous-nav swiper-button-prev md-left-0px"><i class="feather icon-feather-arrow-left icon-extra-medium tw-text-white"></i></div>
+                            <div class="swiper-button-next-nav swiper-button-next md-right-0px"><i class="feather icon-feather-arrow-right icon-extra-medium tw-text-white"></i></div>
+                            <!-- end slider pagination --> --}}
                         </div>
                     </div>
                 </div>

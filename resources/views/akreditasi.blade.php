@@ -4,7 +4,7 @@
 @section('content')
 
 <!-- start page title -->
-        <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5">
+        <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url(images/gambar/iwupaster.jpg)">
             <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -27,7 +27,7 @@
         </section>
 <!-- end page title -->
 {{-- start card --}}
-        <section>
+        <section class="tw-section-dark">
             <div class="tw-card">
                 <div>
                     <h3 class="tw-card-title">Akreditasi</h3>

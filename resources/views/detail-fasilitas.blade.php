@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row align-items-center justify-content-center extra-very-small-screen">
             <div class="col-xl-8 col-lg-10 text-center position-relative page-title-extra-large" data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <h1 class="fw-700 text-dark-gray ls-minus-2px" style="margin-top: 100px;">{{ $kampus->nama }}</h1>
+                <h1 class="fw-700 ls-minus-2px !tw-text-gold" style="margin-top: 100px;">{{ $kampus->nama }}</h1>
             </div>
         </div>
     </div>
@@ -47,69 +47,70 @@
             @endif
 
             <!-- Nama dan Status -->
-            <div class="section-text fs-18 text-dark-gray mt-3 mb-3">
-                <span class="fw-600">{{ $kampus->nama }}
+            <div class="section-text fs-18 mt-3 mb-3">
+                <span class="fw-600 !tw-text-softgold">{{ $kampus->nama }}
             </div>
         </div>
         
         <!-- Kata Sambutan (Full-width) -->
         <div class="col-12">
             @if ($kampus && $kampus->deskripsi)
-            <p class="section-text text-left">{!! $kampus->deskripsi !!}</p>
+            <p class="section-text text-left !tw-text-gray-200">{!! $kampus->deskripsi !!}</p>
             @endif
         </div>
     </div>
 
         <!-- Fasilitas Kampus -->
         <div class="row mt-5">
-            <div class="col-12">
-                <h4 class="text-center text-dark-gray fw-700">Fasilitas {{ $kampus->nama }}</h4>
-            </div>
-            <div class="col-12">
-                <ul class="blog-grid blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" 
-                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    
-                    <li class="grid-sizer"></li>
-                    
-                    <!-- Looping Fasilitas -->
-                    @foreach ($kampus->fasilitas as $fasilitas)
-                    <li class="grid-item">
-                        <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover" 
-                            style="min-height: 450px; display: flex; flex-direction: column; justify-content: space-between;">
-                            
-                            <div class="blog-image" style="height: 200px; overflow: hidden;">
-                                @if ($fasilitas->gambar)
-                                <a href="#" class="d-block">
-                                    <img src="{{ asset('storage/' . $fasilitas->gambar) }}" alt="{{ $fasilitas->nama }}" 
-                                        style="width: 100%; height: 100%; object-fit: cover;" />
-                                </a>
-                                @endif
-                            </div>
-                            
-                            <div class="card-body p-12 lg-p-10" 
+                <div class="col-12">
+                    <h4 class="text-center fw-700 tw-text-gold">Fasilitas Kampus</h4>
+                </div>
+                <div class="col-12">
+                    <ul class="blog-grid blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large" 
+                        data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        
+                        <li class="grid-sizer"></li>
+                        
+                        <!-- Looping Fasilitas -->
+                        @foreach ($kampus->fasilitas as $fasilitas)  
+                        <li class="grid-item">
+                            <div class="tw-bg-[#575757] tw-border tw-border-[#575757] tw-rounded-xl tw-overflow-hidden box-shadow-quadruple-large box-shadow-quadruple-large-hover" 
+                                style="min-height: 450px; display: flex; flex-direction: column; justify-content: space-between;">
+                                
+                                <div class="blog-image" style="overflow: hidden;">
+                                    @if ($fasilitas->gambar)
+                                    <a href="#" class="d-block">
+                                        <img src="{{ asset('storage/' . $fasilitas->gambar) }}" alt="{{ $fasilitas->nama }}') }}" alt="Lorem" 
+                                            style="width: 100%; height: 100%; object-fit: cover;" />
+                                    </a>    
+                                    @endif
+                                </div>
+                          
+                                
+                                <div class="card-body p-12 lg-p-10" 
                                 style="display: flex; flex-direction: column; justify-content: flex-start;">
-                                
-                                @if ($fasilitas->nama)
-                                <span class="card-title fw-600 fs-20 text-dark-gray d-inline-block mb-1" 
+                                    @if ($fasilitas->nama)
+                                    <span class="fw-600 fs-20 d-inline-block mb-1 tw-text-softgold" 
                                     style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
-                                    {{ $fasilitas->nama }}
-                                </span>
-                                @endif
-                                
-                                @if ($fasilitas->deskripsi)
-                                <p class="mb-0" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                        {!! $fasilitas->nama !!}
+                                    </span>
+                                    @endif
+                            
+                                    @if ($fasilitas->deskripsi)
+                                    <p class="mb-0 tw-text-gray-300" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
                                     {!! $fasilitas->deskripsi !!}
-                                </p>
-                                @endif
+                                    </p>
+                                    @endif    
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    @endforeach
-                    <!-- End Looping Fasilitas -->
-                    
-                </ul>
+                        </li>
+                        @endforeach
+                        <!-- End Looping Fasilitas -->
+                        
+                    </ul>
+                </div>
             </div>
-        </div>
+    </div>
 </div>
 {{-- end content --}}
 @endsection

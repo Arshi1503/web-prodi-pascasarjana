@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Artikel')
+@section('title', 'Berita')
 
 @section('content')
 
@@ -32,9 +32,9 @@
                 data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                 
                 @if ($publikasi && $publikasi->judul)
-                <h1 class="fw-700 text-dark-gray ls-minus-2px mb-3" style="word-break: break-word;">
+                <h3 class="fw-700 text-dark-gray ls-minus-2px mb-3 !tw-text-softgold" style="word-break: break-word;">
                     {!! $publikasi->judul !!}
-                </h1>
+                </h3>
                 @endif
 
             </div>
@@ -54,14 +54,16 @@
             @endif
 
             <!-- Nama dan Status -->
-            <div class="section-text fs-18 text-dark-gray mt-3 mb-3">
+            <div class="section-text fs-18 !tw-text-gray-300 mt-3 mb-3">
                 <span class="fw-600">{{ \Carbon\Carbon::parse($publikasi->waktu)->translatedFormat('d F Y') }}</span>
             </div>
         </div>
             <!-- Kata Sambutan (Full-width) -->
             <div class="col-12">
                 @if ($publikasi && $publikasi->deskripsi)
-                <p class="section-text text-left">{!! $publikasi->deskripsi !!}</p>
+                <div class="tw-text-gray-200">
+                    <p class="section-text text-left">{!! $publikasi->deskripsi !!}</p>
+                </div>
                 @endif
             </div>
     </div>

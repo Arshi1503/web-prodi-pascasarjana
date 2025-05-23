@@ -46,13 +46,13 @@
             <!-- Informasi -->
             <div class="tw-text-black tw-text-justify tw-py-4 md:tw-py-0">
                 @if ($item->deskripsi)
-                <span>{!! $item->deskripsi !!}</span>    
+                <span class="tw-text-justify tw-text-gray-200">{!! $item->deskripsi !!}</span>    
                 @endif
                 @if ($item->alamat)
-                <span class="tw-block tw-mt-2"><span class="tw-font-semibold">Alamat: </span>{!! $item->alamat !!}    
+                <span class="tw-block tw-mt-2 tw-text-gray-200"><span class="tw-font-semibold tw-text-softgold">Alamat: </span>{!! $item->alamat !!}    
                 @endif
                 @if ($item->nomor)
-                <span class="tw-block"><span class="tw-font-semibold">Kontak: </span>{!! $item->nomor !!}</span>    
+                <span class="tw-block tw-text-gray-200"><span class="tw-font-semibold tw-text-softgold">Kontak: </span>{!! $item->nomor !!}</span>    
                 @endif
                 <button type="button" class="tw-text-white tw-bg-[#BC8947] tw-my-3 hover:tw-bg-[#c9a06b] focus:tw-outline-none focus:tw-ring-4 focus:tw-ring-[#c9a06b] tw-font-medium tw-rounded-full tw-text-sm tw-px-5 tw-py-2.5 tw-text-center tw-me-2 tw-mb-2"><a class="tw-text-white" href="{{ route('detail-fasilitas', ['id' => $item->id]) }}">Lihat Selengkapnya</a></button> 
             </div>            

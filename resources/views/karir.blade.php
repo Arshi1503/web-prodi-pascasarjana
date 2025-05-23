@@ -4,7 +4,7 @@
 @section('content')
 
 <!-- start page title -->
-        <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5">
+        <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5" style="background-image: url(images/gambar/iwupaster.jpg)">
             <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -27,13 +27,13 @@
         </section>
 <!-- end page title -->
 {{-- start card --}}
-        <section>
+        <section class="tw-section-dark">
             <div class="tw-card">
                 <div>
                     <h3 class="tw-card-title">Karir</h3>
-                    @if ($karir->first() && $karir->first->teks)
-                    <p class="tw-card-subtitle">{!! $karir->first()->teks !!}</p>
-                    @endif
+                    <p class="tw-card-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit explicabo quas, atque esse architecto eaque quis exercitationem dolore pariatur eveniet? Libero alias voluptates repellat cum neque possimus, repellendus vitae.
+                    Optio magni accusantium eveniet eos nulla mollitia impedit culpa possimus sunt. Repellat eos nam delectus facilis, ab, incidunt reiciendis, quibusdam quod temporibus doloribus odit commodi! Rem dolor quisquam accusamus laboriosam.
+                    Aperiam iure ullam cupiditate laboriosam nihil ut tempora quaerat explicabo quibusdam corporis natus minus illum itaque tenetur quas recusandae, nisi consequatur temporibus quos. Asperiores harum enim ratione totam molestiae inventore!</p>
                 </div>
 
                 <div class="tab-content tw-p-4" id="tabel">
@@ -47,19 +47,18 @@
                             </tr>
                           </thead>
                           <tbody>
-                            @php $counter = 1; @endphp
-                            @foreach ($karir as $item )
                             <tr class="tw-table-row">
-                                <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">{{ $counter++}}</td>
-                                @if ($item->sektor)
-                                <td class="tw-px-6 tw-py-6 tw-text-center tw-w-36">{!! $item->sektor !!}</td>
-                                @endif
-                                @if ($item->deskripsi)
-                                <td class="tw-px-6 tw-py-6">{!! $item->deskripsi !!}</td>
-                                @endif
+                                <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">1</td>
+                                <td class="tw-px-3 tw-py-4 tw-text-justify">	
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis expedita voluptatum repudiandae consequuntur! Veritatis soluta placeat sint impedit necessitatibus, dicta labore architecto sed reiciendis. Nam ipsa commodi neque porro repellendus.</td>
+                                <td class="tw-px-6 tw-py-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, vitae quo. Iste eum officia consequuntur, hic suscipit quaerat at ratione laborum eos obcaecati autem impedit, adipisci maiores, labore sapiente reiciendis.</td>
                             </tr>
-                            @endforeach
-                        </tbody>
+                            <tr class="tw-table-row last:tw-border-0">
+                              <td class="tw-px-6 tw-py-4 tw-font-medium tw-text-gray-900">2</td>
+                              <td class="tw-px-6 tw-py-4">Menyelenggarakan pendidikan berkualitas di bidang informatika yang berorientasi pada perkembangan teknologi terkini dan kebutuhan industri.</td>
+                              <td class="tw-px-6 tw-py-4">Menyelenggarakan pendidikan berkualitas di bidang informatika yang berorientasi pada perkembangan teknologi terkini dan kebutuhan industri.</td>
+                            </tr>
+                          </tbody>
                         </table>
                     </div>
                 </div>

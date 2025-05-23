@@ -9,9 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#BC8947',
-        secondary: '#c9a06b',
-        accent: '#a64c4c',
+        'gold': '#BC8947',
+        'softgold': '#c9a06b',
+        'primary': '#2e2e2e',
+        'secondary': '#575757',
+        // primary: '#BC8947',
+        // secondary: '#c9a06b',
+        // accent: '#a64c4c',
       }
     },
   },

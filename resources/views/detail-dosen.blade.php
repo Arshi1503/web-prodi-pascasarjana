@@ -29,14 +29,14 @@
     <div class="container mt-12">
         <div class="row">
             <!-- Profil Dosen -->
-            <div class="col-md-4 text-center p-3 border rounded shadow-sm">
+            <div class="col-md-4 text-center p-3 border rounded shadow-sm tw-border-[#424242] tw-mx-auto">
                 @if ($pimpinanStaff && $pimpinanStaff->foto)
                 <img src="{{ asset('storage/' . $pimpinanStaff->foto) }}" class="img-fluid rounded-circle tw-mx-auto" width="150" alt="Foto Dosen">
                 @endif
-                <h5 class="card-title fw-600 fs-17 lh-28 text-dark-gray text-dark-gray-hover d-inline-block w-95 sm-w-100 mt-5">{{ $pimpinanStaff->nama }}</h5>
+                <h5 class="card-title fw-600 fs-17 lh-28 text-dark-gray text-dark-gray-hover d-inline-block w-95 sm-w-100 mt-5 !tw-text-gold">{{ $pimpinanStaff->nama }}</h5>
                 <p>
-                    <i class="bi bi-person"></i> {{ $pimpinanStaff->nidn }} <br>
-                    <i class="bi bi-envelope"></i> {{ $pimpinanStaff->email }}
+                    <i class="bi bi-person tw-text-gray-200"></i> {{ $pimpinanStaff->nidn }} <br>
+                    <i class="bi bi-envelope tw-text-gray-200"></i> {{ $pimpinanStaff->email }}
                 </p>
                 @if ($pimpinanStaff->id_google_scholar)
                     @php
@@ -44,12 +44,12 @@
                     @endphp
                     <a href="{{ $scholarUrl }}" target="_blank" class="btn w-100" style="background-color: #0D47A1; color: white;">Google Scholar</a>
                 @else
-                    <span class="text-muted">Profil Google Scholar belum ditemukan.</span>
+                    <span class="tw-text-softgold">Profil Google Scholar belum ditemukan.</span>
                 @endif
             </div>
             
             <!-- Mata Kuliah dan Jadwal -->
-            <div class="col-md-8">
+            <div class="col-md-8 tw-mx-auto !tw-mt-3">
             <h4>Data Penelitian</h4>
             <table class="table table-bordered mt-3">
                 <thead class="table-light">

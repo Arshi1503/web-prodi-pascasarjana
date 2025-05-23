@@ -1,9 +1,9 @@
-<footer class="footer-light bg-very-light-gray"> 
+<footer class="footer-light bg-dark-gray"> 
     <div class="container">
         <div class="row justify-content-center" style="flex-direction: row">
             <!-- start footer column -->
             <div class="col-lg-3 col-md-12 col-sm-6 order-4 order-lg-1 order-md-4 order-sm-3 md-mt-35px text-center text-sm-start text-md-center text-lg-start last-paragraph-no-margin">
-                <a href="demo-finance.html" class="mb-25px sm-mb-20px d-inline-block"><img src="{{asset("images/gambar/logoiwu.png")}}" alt="" style="width: 75px"></a>
+                <a href="/" class="mb-25px sm-mb-20px d-inline-block"><img src="{{asset("images/gambar/logoiwu.png")}}" alt="" style="width: 75px"></a>
                 <p class="mb-15px">Menjadi Universitas terdepan dalam pemajuan ilmu-ilmu pengetahuan, teknologi, seni dan pemberdayaan perempuan yang memperkokoh derajat kemanusiaan serta memiliki semangat entrepreneurship pada Tahun 2035.</p>
                 <p>&COPY; Copyright 2025 <a href="https://www.iwu.ac.id/" target="_blank" class="text-decoration-line-bottom text-dark-gray fw-500">International Women University</a></p>
             </div>

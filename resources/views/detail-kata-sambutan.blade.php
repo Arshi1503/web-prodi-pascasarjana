@@ -37,15 +37,15 @@
                     @endif
 
                     <!-- Nama dan Status -->
-                    <div class="section-text fs-18 text-dark-gray mt-3 mb-3">
-                        <span class="fw-600">{{ $pimpinanStaff->nama }}</span>, {{ $pimpinanStaff->status }}
+                    <div class="section-text fs-18 tw-text-softgold mt-3 mb-3">
+                        <span class="fw-600 tw-text-softgold">{{ $pimpinanStaff->nama }}</span><span class="fw-600 tw-text-gray-300">, {{ $pimpinanStaff->status }}</span>
                     </div>
                 </div>
                 
                 <!-- Kata Sambutan (Full-width) -->
                 <div class="col-12">
                     @if ($pimpinanStaff && $pimpinanStaff->kata_sambutan)
-                    <p class="section-text text-left">{!! $pimpinanStaff->kata_sambutan !!}</p>
+                    <div class="section-text text-left !tw-text-gray-300">{!! $pimpinanStaff->kata_sambutan !!}</div>
                     @endif
                 </div>
             </div>

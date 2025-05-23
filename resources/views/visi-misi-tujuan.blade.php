@@ -27,7 +27,7 @@
         </section>
 <!-- end page title -->
 {{-- start card --}}
-        <section>
+        <section class="tw-border tw-border-x tw-border-[#2E2E2E] tw-bg-[#2E2E2E]">
             <div class="tw-card">
                 <h3 class="tw-card-title">Visi, Misi, Tujuan</h3>
                 <div class="tw-tab-nav">
@@ -69,7 +69,7 @@
                 <div class="tab-content tw-p-4 tw-hidden" data-anime="{ &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 400, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }" id="misi">
                     <div class="tw-overflow-x-auto">
                         <table class="tw-table">
-                          <thead class="tw-text-lg tw-text-[#BC8947] tw-uppercase tw-bg-slate-200">
+                          <thead class="tw-table-head">
                             <tr>
                               <th scope="col" class="tw-pl-6 tw-py-3">No</th>
                               <th scope="col" class="tw-pr-6 tw-py-3 tw-text-center">Misi</th>
@@ -99,7 +99,7 @@
                 <div class="tab-content tw-p-4 tw-hidden" data-anime="{ &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 400, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }" id="tujuan">
                     <div class="tw-overflow-x-auto">
                         <table class="tw-table">
-                          <thead class="tw-text-lg tw-text-[#BC8947] tw-uppercase tw-bg-slate-200">
+                          <thead class="tw-table-head">
                             <tr>
                               <th scope="col" class="tw-pl-6 tw-py-3">No</th>
                               <th scope="col" class="tw-pr-6 tw-py-3 tw-text-center">Tujuan</th>

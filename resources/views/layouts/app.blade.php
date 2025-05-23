@@ -29,8 +29,7 @@
 
     @stack('styles')
 </head>
-<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
-    
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor tw-bg-[#2e2e2e]">
 
     @include('partials.navbar') {{-- kalau ada navbar --}}
 
@@ -41,7 +40,6 @@
     @include('partials.footer') {{-- kalau ada footer --}}
 
     <!-- Scripts -->
-    <script src="{{ asset('js/theme.js') }}"></script>
     <script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/vendors.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
